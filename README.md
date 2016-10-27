@@ -11,3 +11,10 @@ Step:
 6. cp camchain-imucam-hometimerROS_bags<bagname>.yaml ~/catkin_ws/src/visensor_tools/visensor_calibration_flasher/camchain-imucam-example.yaml
 7. roslaunch visensor_calibration_flasher flash_sensor.launch
 ```
+
+Use MEI to cali:
+1. Replace calib.launch
+2. roslaunch camera\_calibration\_frontend calib.launch
+3. Save the images, and extract from /tmp/...tar.gz
+4. git clone \*\*\*/camera\_model
+5. ./cali\_vi.sh
