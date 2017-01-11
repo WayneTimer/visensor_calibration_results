@@ -19,5 +19,5 @@ Use MEI/PINHOLE to cali:
 3. Save the images, and extract from /tmp/...tar.gz  
 4. git clone ***/camera_model  
 5. rosrun camera_model Calibration -w 11 -h 8 -s 70 -i <images_path>  
-(Default is mei, if use pinhole: rosrun camera_model Calibration --camera-model pinhole -w 11 -h 8 -s 70 -i <images_path>  
- ```
+(Default is mei, if use pinhole: rosrun camera_model Calibration --camera-model pinhole -w 11 -h 8 -s 70 -i <images_path>)
+```
