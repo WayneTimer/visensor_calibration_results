@@ -12,9 +12,12 @@ Step:
 7. roslaunch visensor_calibration_flasher flash_sensor.launch
 ```
 
-Use MEI to cali:
-1. Replace calib.launch
-2. roslaunch camera\_calibration\_frontend calib.launch
-3. Save the images, and extract from /tmp/...tar.gz
-4. git clone \*\*\*/camera\_model
-5. ./cali\_vi.sh
+Use MEI/PINHOLE to cali:
+```
+1. Replace calib.launch  
+2. roslaunch camera\_calibration\_frontend calib.launch  
+3. Save the images, and extract from /tmp/...tar.gz  
+4. git clone \*\*\*/camera\_model  
+5. rosrun camera_model Calibration -w 11 -h 8 -s 70 -i <images_path>  
+(Default is mei, if use pinhole: rosrun camera_model Calibration --camera-model pinhole -w 11 -h 8 -s 70 -i <images_path>  
+ ```
